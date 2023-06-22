@@ -17,8 +17,6 @@ y=list(x)
 y.sort()
 i=0
 c=1
-
-
 for i in range(len(y)-1):
     if y[i]!=y[i+1]:
         c=c+1
