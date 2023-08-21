@@ -1,4 +1,13 @@
 n = int(input())
+x = list(map(int, input().split()))
+r = [0, 0]
+for i in range(n):
+    idx = 0 if x[0] > x[-1] else -1
+    r[i % 2] += x[idx]
+    x.pop(idx)
+print(r[0], r[1])
+'''
+n = int(input())
 c = list(map(int,input().split()))
 a = []
 b =[]
@@ -26,3 +35,4 @@ while len(c) > 0:
         n -= 1
         x += 1
 print(sum(a), sum(b))
+'''
