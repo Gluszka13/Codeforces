@@ -1,3 +1,17 @@
+for _ in range(int(input())):
+    n = int(input())
+    h = n // 2
+    if h % 2 != 0:
+        print('NO')
+        continue
+    print('YES')
+    for i in range(h):
+        print(2 * i + 2)
+    for i in range(h - 1):
+        print(2 * i + 1)
+    print(3 * h - 1)
+
+'''
 t = int(input())
 while t > 0:
     y = int(input())
@@ -38,4 +52,4 @@ while t > 0:
         print(' '.join(map(str, l)))
     else:
         print('NO')
-
+'''
